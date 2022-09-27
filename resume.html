@@ -1,0 +1,632 @@
+<!doctype html>
+<html>
+	<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+	<title>Philip Vejre</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #ddc500;
+}
+a:focus,
+a:hover {
+	color: #0394af;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 890px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px;
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+.basics-content {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.align-bottom {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.img-circle {
+	max-width: 160px;
+  width:100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+	background: #f4f6f6;
+	padding: 10px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #12b1cf;
+	font-size: 24px;
+}
+#content h3 {
+	color: #0294af;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .url a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .url a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+
+	</head>
+	<body>
+
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<img src=picture.jpg class="img-circle">
+				</div>
+				<div class="col-sm-9 basics-content">
+					<div class="align-bottom">
+					<h1>
+						Philip Vejre
+					</h1>
+					<h2>
+						Software Developer and Cryptographer
+					</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">philip@vejre.blue</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">+45 23 35 15 57</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>Software developer with a strong security background, cloud experience, and a passion for continually improving and perfecting code. A big fan of modern development practices including agile, CI/CD, automated testing, containerization, and Kubernetes, but with a keen eye for simplicity in lieu of unnecessary complexity. Looking for a team of smart people that can help me hone my software development skills, and who I can help create better products and internal processes.</p>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>CYBERCRYPT A/S</span>
+					<span class="date">
+						April 2020 — 
+					</span>
+				</h4>
+				<div class="url pull-right">
+					<a href="https://www.cyber-crypt.com/">https://www.cyber-crypt.com/</a>
+				</div>
+				<div class="position">
+					Software &amp; Cryptography Engineer, Tech Lead
+				</div>
+				<div class="summary">
+					<p>Technical lead and cryptography expert on an application layer encryption product designed for cloud workloads. Helped the company establish software development best practices and agile processes. Additionally, a security and cryptography consultant on customer projects.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Design and development of a gRPC service implemented in Go.</li>
+					<li class="bullet">Deployment of the service into GCP using Kubernetes and Helm.</li>
+					<li class="bullet">Automatic testing and continuous delivery using Github Actions.</li>
+					<li class="bullet">Security analysis and hardening of customers&#x27; cloud deployments using CIS Kubernetes Benchmarks.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Akamai Technologies</span>
+					<span class="date">
+						December 2018 — April 2020
+					</span>
+				</h4>
+				<div class="url pull-right">
+					<a href="https://www.akamai.com/">https://www.akamai.com/</a>
+				</div>
+				<div class="position">
+					Senior Software Engineer
+				</div>
+				<div class="summary">
+					<p>Part of a small team developing a multicast video streaming SDK. Took lead on  redesigning a test platform which orchestrated Android devices and multicast servers.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Developmet of a C++ SDK which interfaced with Android through JNI.</li>
+					<li class="bullet">Integral part of implementing DASH video streaming support.</li>
+					<li class="bullet">Cleaned up a large Python test platform, introduced linting and formatting.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>DTU Compute</span>
+					<span class="date">
+						Feburary 2016 — November 2018
+					</span>
+				</h4>
+				<div class="url pull-right">
+					<a href="https://www.compute.dtu.dk">https://www.compute.dtu.dk</a>
+				</div>
+				<div class="position">
+					PhD Student
+				</div>
+				<div class="summary">
+					<p>Development of new advanced statistical models for linear cryptanalysis.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Development of specialized algorithms and datastructures for block cipher analysis.</li>
+					<li class="bullet">Implementation of a linear/differential cryptanalysis tool in Rust.</li>
+					<li class="bullet">Lecturer in Discrete Mathematics, TA in several cryptography courses.</li>
+					<li class="bullet">Responsible for design of exercises for several cryptography courses.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Technical University of Denmark</span>
+					<span class="date">
+						Feburary 2014 — December 2015
+					</span>
+				</h4>
+				<div class="url pull-right">
+					<a href="https://www.dtu.dk">https://www.dtu.dk</a>
+				</div>
+				<div class="position">
+					Teching Assistant
+				</div>
+				<div class="summary">
+					<p>Teaching assistant in Discrete Mathematics and several cryptography courses</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>DTU Compute</span>
+					<span class="date">
+						Feburary 2016 — November 2018
+					</span>
+				</h4>
+				<div class="area">
+					Statistical Cryptanalysis
+				</div>
+				<div class="studyType">
+					PhD
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Technical University of Denmark</span>
+					<span class="date">
+						September 2013 — January 2016
+					</span>
+				</h4>
+				<div class="area">
+					Mathematical Modelling and Computation
+				</div>
+				<div class="studyType">
+					Master of Science (M.Sc.)
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Technical University of Denmark</span>
+					<span class="date">
+						September 2010 — July 2013
+					</span>
+				</h4>
+				<div class="area">
+					Mathematics and Technologu
+				</div>
+				<div class="studyType">
+					Bachelor of Science (B.Sc.)
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>Advanced: Go, Protobuf, gRPC</li>
+					<li>Proficient: C++, Rust, Python, REST</li>
+					<li>Intermediate: Java, HPC</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Deployment</h4>
+				</div>
+				<ul class="keywords">
+					<li>Advanced: Kubernetes, Docker</li>
+					<li>Proficient: GCP, Helm, Kustomize</li>
+					<li>Intermediate: Terraform</li>
+					<li>Beginner: AWS, Digital Ocean</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Cyber Security</h4>
+				</div>
+				<ul class="keywords">
+					<li>Advanced: Cryptography, Cryptanalysis</li>
+					<li>Proficient: Security Analysis, Deployment Hardening, TLS, OAuth, OIDC</li>
+					<li>Intermediate: Zero Trust Architechture</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>CI/CD</h4>
+				</div>
+				<ul class="keywords">
+					<li>Advanced: Github Actions, Trunk-Based Development</li>
+					<li>Proficient: Gitflow, GitVersion</li>
+					<li>Beginner: Jenkins</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Tools</h4>
+				</div>
+				<ul class="keywords">
+					<li>Advanced: Git, GitHub</li>
+					<li>Proficient: Linux, Bash, Linear</li>
+					<li>Intermediate: Gitlab, Bitbucket, Jira</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Storage Technologies</h4>
+				</div>
+				<ul class="keywords">
+					<li>Proficient: AWS S3, MinIO</li>
+					<li>Intermediate: SQL, Ceph</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="publications" class="row">
+		<aside class="col-sm-3">
+			<h3>Publications</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Generating Graphs Packed with Paths</span>
+					<span class="date">
+						September 2018
+					</span>
+				</h4>
+				<div class="url pull-right">
+					<a href="https://tinyurl.com/5n8ewj6x"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong>IACR Transactions on Symmetric Cryptology</strong>
+				</div>
+				<div class="summary">
+					<p></p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Higher-Order DCA against Side-Channel Countermeasures</span>
+					<span class="date">
+						September 2018
+					</span>
+				</h4>
+				<div class="url pull-right">
+					<a href="https://tinyurl.com/44wy44ad"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong>Cryptology ePrint Archive</strong>
+				</div>
+				<div class="summary">
+					<p></p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Multivariate Profiling of Hulls for Linear Cryptanalysis</span>
+					<span class="date">
+						January 2018
+					</span>
+				</h4>
+				<div class="url pull-right">
+					<a href="https://tinyurl.com/4dta4e5k"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong>IACR Transactions on Symmetric Cryptology</strong>
+				</div>
+				<div class="summary">
+					<p></p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Linear Cryptanalysis of DES with Asymmetries</span>
+					<span class="date">
+						January 2017
+					</span>
+				</h4>
+				<div class="url pull-right">
+					<a href="https://tinyurl.com/4ejafhuk"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong>ASIACRYPT</strong>
+				</div>
+				<div class="summary">
+					<p></p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Route 66: Passively Breaking All GSM Channels</span>
+					<span class="date">
+						July 2014
+					</span>
+				</h4>
+				<div class="url pull-right">
+					<a href="https://tinyurl.com/45e6e395"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong>ACISP’14, Lecture Notes in Computer Science</strong>
+				</div>
+				<div class="summary">
+					<p></p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Danish</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Fluent
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4></h4>
+				</div>
+				<ul class="keywords">
+					<li>Gardening</li>
+					<li>Computer and board games</li>
+					<li>Hiking</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+	</div>
+
+	</body>
+</html>
